@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="location">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body ng-controller="MainController">
+    <h1>Geolocation API</h1>
+    <div class="buttons-wrapper">
+        <button id="button-get-position" class="btn btn-primary btn-lg">Get current position</button>
+    </div>
+
+    <span id="g-unsupported" class="hidden">API not supported</span>
+
+    <h2>Information</h2>
+    <div id="g-information" class="form-group">
+
+        <p>Your position is <span id="latitude" class="g-info">:</span></p>
+        <p>Latitude <span id="longitude" class="g-info">:</span></p>
+        <p>Longitude (with an accuracy of <span id="position-accuracy" class="g-info">:</span> meters)</p>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
